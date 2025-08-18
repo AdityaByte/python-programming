@@ -34,3 +34,8 @@ c = b
 print(id(c)) # Print the same id as of b
 d = b.copy()
 print(id(d)) # Different id
+
+# Logical operators : and, or, not
+# and - both condition true
+# or - any of the condition true
+# not - invert the condition.
