@@ -42,9 +42,63 @@ for match in matches:
 ```
 
 #### check it out the other methods like 
+Check it out the CLI documentation for these method use the `help()` function.
 
 - `pattern.match()` > Only matches out the pattern if it occurs at the begining of the string otherwise it returns None.
 
 - `pattern.search()` > It returns the first occurance through the whole string. 
 
 - `pattern.findAll()` > Returns a list of string with the matches.
+There is something interesting with the `re.findall() or the pattern.findall()` method 
+This method has a design pattern, when we pass a pattern to it with containing no capturing groups.
+
+1. **No groups**: returns a list of strings with all the matches with the given pattern.
+
+2. **One group**: If the pattern has exactly one group, findall() returns a list containing only the content of that single group, ignoring the rest of the match.
+
+3. **Multiple Groups**: If the pattern has multiple groups, findall() returns a list of tuples, where each tuple contains the content of all the groups in order for that match.
+
+- `re.sub()` > This function is used for substitution returns a new result.
+```python
+# Example:
+import re
+
+my_str = "Good morning aditya"
+
+def sub_function():
+    pattern = re.compile(r"morning")
+    # re.sub(pattern, repl, string, count=0, flags=0)
+    new_string = re.sub(pattern, "Night", my_str)
+    print(new_string)
+```
+
+- `re.split()` > This function is used for splitting the string on the basis of some pattern.
+```python
+import re
+
+my_str = "hello my name is aditya pawar my work is something and i my do something what you do."
+
+def split_function():
+    # print(help(re.split))
+    pattern = re.compile(r"m.")
+    sub_strings = re.split(pattern, my_str)
+    for sub_string in sub_strings:
+        print(sub_string)
+```
+
+- `re.fullmatch() | pattern.fullmatch()` > This is used for fully matching the string.
+```python
+import re
+
+search_text = input("Enter password: ")
+
+def fullmatch_function():
+    pattern = re.compile(r".{6}", flags=re.IGNORECASE)
+    matches = pattern.fullmatch(search_text)
+    print("Valid" if matches is not None else "Invalid")
+```
+
+#### Note: Something you might figure out after learning all these things:
+> We can call the same methods by via the re module reference or with the 
+> help of the pattern object.
+> So just need to add up a point that these methods are functionally identical and you can prefer your own way of calling these methods.

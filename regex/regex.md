@@ -22,10 +22,18 @@
 - \s      - Whitespace (space, tab, newline)
 - \S      - Not Whitespace (space, tab, newline)
 
-> Some which are used for other aspects.
+> The below ones are known anchors, they don't actually match any characters they are 
+> used for different purpose rather characters these are used for invisible characters before and after.
 
-- \b      - Word Boundary
-- \B      - Not a Word Boundary
+- \b      - Word Boundary: It is used in some cases when we have a word boundary which could be anything like a white space or a newline character.
+```text
+Something like if we have some words like
+word = "Ha HaHa"
+regex would be = "\bHa" Now it select two words. 
+```
+
+- \B      - Not a Word Boundary: It is used for not a word boundary case like something like pattern matching for `Hello` if we have to search llo we can use this pattern - `\Bllo`.
+
 - ^       - Beginning of a String
 - $       - End of a String
 
