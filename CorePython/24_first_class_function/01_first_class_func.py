@@ -7,6 +7,10 @@ By means of the first class function we understand that function can be treated 
 2. Functions can be passed as an argument to other function.
 3. Functions can be returned from a function.
 4. Functions can be stored in other data structures like list.
+
+Corey's Definition:
+First class functions allows us to treat function as any other objects. For Example:
+we can pass functions as an argument to another functions we can assign functions we can return function.
 """
 
 """

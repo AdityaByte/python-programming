@@ -13,6 +13,10 @@ allowing the function to access of hold the variables even after the execution o
 
 Python specific definition: A closure in Python is a callable that retains access to variables from its enclosing lexical scope,
 even after the outer function has finished execution.
+
+Corey Definition:
+Closures allows us to take advantage of the first class functions, and return an inner function and has access to the
+variables local to the scope in which they were created.
 """
 
 # Example.
