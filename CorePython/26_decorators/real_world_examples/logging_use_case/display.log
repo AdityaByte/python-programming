@@ -1,0 +1,4 @@
+INFO:root:Ran with args: ('aditya', 21, 'Masters in astrophysics') and kwargs: {}
+INFO:root:Ran with args: ('aditya', 21, 'Masters in astrophysics') and kwargs: {}
+INFO:root:Ran with args: () and kwargs: {'name': 'aditya', 'age': 21, 'course': 'Masters in astrophysics'}
+INFO:root:Ran with args: ('aditya', 21) and kwargs: {'course': 'Masters in astrophysics'}
