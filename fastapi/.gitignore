@@ -1,0 +1,59 @@
+# ----------------------
+# Python cache & compiled
+# ----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------
+# Virtual environments
+# ----------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------
+# uv specific
+# ----------------------
+# uv creates a lock file - you may WANT to keep it for reproducibility
+# Uncomment below ONLY if you don't want it
+# uv.lock
+
+# ----------------------
+# Build / packaging
+# ----------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ----------------------
+# Logs & temp files
+# ----------------------
+*.log
+*.tmp
+*.swp
+
+# ----------------------
+# Environment variables
+# ----------------------
+.env
+.env.*
+
+# ----------------------
+# Jupyter Notebook
+# ----------------------
+.ipynb_checkpoints/
+
+# ----------------------
+# IDEs / Editors
+# ----------------------
+.vscode/
+.idea/
+
+# ----------------------
+# OS files
+# ----------------------
+.DS_Store
+Thumbs.db
